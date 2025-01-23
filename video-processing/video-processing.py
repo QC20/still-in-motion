@@ -12,7 +12,7 @@ FRAME_HEIGHT = 300
 
 def resize_video(input_path, output_path, width=FRAME_WIDTH, height=FRAME_HEIGHT):
     """
-    Resize the video to the specified dimensions.
+    Resize the video to the specified dimensions, maintaining full frame.
     
     Args:
         input_path (str): Path to the input video file.
@@ -24,7 +24,7 @@ def resize_video(input_path, output_path, width=FRAME_WIDTH, height=FRAME_HEIGHT
         # Load the video file
         clip = VideoFileClip(input_path)
         
-        # Resize the video to the desired resolution
+        # Resize the video to the desired resolution, allowing stretching
         resized_clip = clip.resize(newsize=(width, height))
         
         # Write the resized video to the output file with a progress bar
@@ -80,32 +80,6 @@ def hardcode_subtitles(video_path, subtitle_path, output_path):
         print(f"Unexpected error: {ex}")
         return video_path
 
-def crop_image_to_proper_ratio(img, target_width, target_height):
-    """
-    Crop image to maintain the target aspect ratio.
-    
-    Args:
-        img (PIL.Image): Input image.
-        target_width (int): Desired width.
-        target_height (int): Desired height.
-    
-    Returns:
-        PIL.Image: Cropped image.
-    """
-    width, height = img.size
-    target_ratio = target_width / target_height
-    if (width / height) > target_ratio:
-        new_width = int(target_ratio * height)
-        left = (width - new_width) // 2
-        right = left + new_width
-        img = img.crop((left, 0, right, height))
-    elif (width / height) < target_ratio:
-        new_height = int(width / target_ratio)
-        top = (height - new_height) // 2
-        bottom = top + new_height
-        img = img.crop((0, top, width, bottom))
-    return img
-
 def process_frame(frame):
     """
     Process a single video frame for e-paper display.
@@ -119,7 +93,6 @@ def process_frame(frame):
     img = Image.fromarray(frame)
     img = ImageOps.exif_transpose(img)
     img = ImageOps.autocontrast(img, cutoff=2)
-    img = crop_image_to_proper_ratio(img, FRAME_WIDTH, FRAME_HEIGHT)
     img = img.resize((FRAME_WIDTH, FRAME_HEIGHT), Image.LANCZOS)
     img = img.convert("1", dither=Image.FLOYDSTEINBERG)
     return img
