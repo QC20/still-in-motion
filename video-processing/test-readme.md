@@ -1,4 +1,4 @@
-# Advanced Video to E-Paper Frame Processor
+# Video to E-Paper Frame Processor
 
 ## Features
 
@@ -62,17 +62,33 @@ python video_processor.py <input_video> <output_prefix>
 
 ```bash
 # Basic video processing
-python video_processor.py movie.mp4 output
+python video_processor.py input_video.mp4 output_prefix
 
 # With subtitles and custom resolution
-python video_processor.py movie.mp4 output \
+python video_processor.py input_video.mp4 output_prefix \
     --subtitle english.srt \
     --width 800 \
     --height 600 \
     --fps 2
 
 # Preserve intermediate files for debugging
-python video_processor.py movie.mp4 output --keep-intermediate
+python video_processor.py input_video.mp4 output_prefix --keep-intermediate
+```
+
+### Subtitle Usage Example
+
+### Subtitle File Specification
+- Use full path to subtitle file
+- Supports .srt files
+- Recommended: Use absolute path to avoid errors
+
+#### Examples of Subtitle Path Specification
+```bash
+# Absolute path (Recommended)
+python video_processor.py input_video.mp4 output_prefix --subtitle /full/path/to/subtitles.srt
+
+# Relative path (from current directory)
+python video_processor.py input_video.mp4 output_prefix --subtitle ./subtitles.srt
 ```
 
 ## New Improvements

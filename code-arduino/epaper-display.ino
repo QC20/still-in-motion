@@ -19,7 +19,7 @@
 #define PIN_SCLK            13
 
 #define SECONDS_IN_A_MINUTE  60
-#define SECONDS_TO_DISPLAY   4  // Reduced awake time to 4 seconds
+#define SECONDS_TO_DISPLAY   10  // wake time is 10 seconds
 #define NUMBER_OF_SLEEP_LOOPS   ((10 * SECONDS_IN_A_MINUTE - SECONDS_TO_DISPLAY)/8)
 
 // Function declarations.
