@@ -1,0 +1,5 @@
+# Example of setup 
+
+
+## Setup example of SD Card
+I apologize for so many of the images being so similar, but as they represent each one second of the movie it makes good sense they are very similar in content. I could have added more, but I feel this is sufficient to get the message across. The core idea is that the image should be placed at the root directory of the SD card and be numbered incrementally with the "frame_"-prefix. Otherwise they won't get read. Keep ind mind the number sequence is important as the code specifically looks for 1++ increment from its current digit. Therefore, if you shut it down for some reason or by mistake, it will still hold its last shown image (i.e. digit in name of last shown image) in EEPROM. This means it will pick up from where it last lost power. If you want to completely reset the showing, you will have to clear the EEPROM. I have added a script in this repo that will enable you to do that. 
