@@ -36,6 +36,11 @@ The picture frame is controlled by a single button, providing a simple and intui
 - WeAct 4.2'' 4.2 Inch Epaper Module (link)[https://www.aliexpress.com/item/1005007133350270.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.2.294e41nz41nzrb&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=fdf973a0-43ec-4137-b5b9-302a5b209ea0&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:fdf973a0-43ec-4137-b5b9-302a5b209ea0,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21USD%2123.37%2121.70%21%21%21169.33%21157.23%21%40211b431017377138436145030e382c%2112000039517565965%21rec%21DK%212622682955%21X&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A]
 - Battery
 
+### Setup and Connections
+NB: needs to be updated images are old
+![NB: needs to be updated](img/WeAct_E-Hat_SPI.jpg)
+
+![NB: needs to be updated](img/SD_Card-Connections.jpg)
 
 
 
