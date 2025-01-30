@@ -78,3 +78,7 @@ Therefore, the battery life for the picture frame is:
 \[
 \approx 2.56 \, \text{(years)}
 \]
+
+### Library
+
+#define GxEPD2_DRIVER_CLASS GxEPD2_420_GDEY04t81
