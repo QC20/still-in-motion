@@ -86,3 +86,8 @@ Therefore, the battery life for the picture frame is:
 #### Read for help
 
 https://forum.arduino.cc/t/gxepd2-good-display-gdey0213b74/1182645
+https://forums.raspberrypi.com/viewtopic.php?t=348335
+https://www.reddit.com/r/arduino/comments/1h1tklh/epaper_display_turn_gray_after_some_time_cant/
+https://fritzenlab.net/2024/09/15/2-9-e-paper-display-from-weact/
+https://steve.fi/hardware/d1-epaper/
+https://forum.arduino.cc/t/weact-epaper-4-2-screen-with-esp32-s3-not-working/1346054
