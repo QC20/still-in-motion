@@ -45,7 +45,7 @@ NB: needs to be updated images are old
 
 
 
-# Battery Life and Power Consumption
+## Battery Life and Power Consumption
 
 It takes about 10 seconds to change the image on the screen. During this time, it uses approximately 40mA.
 
@@ -82,3 +82,7 @@ Therefore, the battery life for the picture frame is:
 ### Library
 
 #define GxEPD2_DRIVER_CLASS GxEPD2_420_GDEY04t81
+
+#### Read for help
+
+https://forum.arduino.cc/t/gxepd2-good-display-gdey0213b74/1182645
