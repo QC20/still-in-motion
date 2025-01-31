@@ -91,3 +91,4 @@ https://www.reddit.com/r/arduino/comments/1h1tklh/epaper_display_turn_gray_after
 https://fritzenlab.net/2024/09/15/2-9-e-paper-display-from-weact/
 https://steve.fi/hardware/d1-epaper/
 https://forum.arduino.cc/t/weact-epaper-4-2-screen-with-esp32-s3-not-working/1346054
+https://community.particle.io/t/gxepd2-display-library-for-spi-e-paper-displays-available-for-particle/51618
