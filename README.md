@@ -1,5 +1,7 @@
 # Still in Motion
 
+test
+
 Still in Motion is an artistic project that transforms the cinematic experience into a meditative display on a static e-paper screen. For this rendition, we feature the 2015 masterpiece Embrace of the Serpent.
 
 The idea is straightforward yet deeply impactful: the entire film is presented frame by frame, with each frame displayed for 24 minutes. This creates a "faux frame rate" of 24 frames per hour, turning the traditionally fleeting nature of film into a slow and contemplative journey. At this pace, the 125-minute runtime of Embrace of the Serpent extends to an immersive experience lasting approximately 125 days.
@@ -36,11 +38,48 @@ The picture frame is controlled by a single button, providing a simple and intui
 - WeAct 4.2'' 4.2 Inch Epaper Module (link)[https://www.aliexpress.com/item/1005007133350270.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.2.294e41nz41nzrb&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=fdf973a0-43ec-4137-b5b9-302a5b209ea0&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:fdf973a0-43ec-4137-b5b9-302a5b209ea0,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21USD%2123.37%2121.70%21%21%21169.33%21157.23%21%40211b431017377138436145030e382c%2112000039517565965%21rec%21DK%212622682955%21X&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A]
 - Battery
 
+
+## PCB 
+
+# PCB Design
+
+The design of the PCB for this project is directly based on the [Waveshare e-Paper Picture Frame project by Rob G](https://github.com/rob-g2-365/waveshare_epaper_picture_frame?tab=readme-ov-file). The project's design closely matched the requirements for our specific use case, which is why we adopted the same PCB layout and component configuration. If any details are unclear, the original GitHub repository provides a comprehensive overview of the design.
+
+This section will examine the key design components, part selections, and architectural decisions that align with the original project's approach, detailing how we implemented the PCB to meet our specific functional needs.
+
+Here's a table for the component layout:
+
+| **Component Number** | **Part** |
+|---------------------|----------|
+| C1, C2 | 22pF |
+| C3, C4, C5 | 100nF |
+| D1 | General Purpose Diode |
+| J1, J2 | Male Connector 01x06 Pin |
+| J3 | Male Connector 01x08 Pin |
+| J4 | Male Connector 01x02 Pin |
+| Q1 | PMOS - LP0701N3-GR |
+| R1 | 10K Resistor |
+| R2, R3 | 100K Resistor |
+| SW1 | Push button switch |
+| U1 | 28 Pin Connector for ATmega328-PY |
+| Y1 | 16Mhz Crystal |
+
+
+
+![NB: needs to be updated](img/pcb_bare.jpeg)
+
+![NB: needs to be updated](img/pcb_components.jpeg)
+
+
+
 ### Setup and Connections
+
 NB: needs to be updated images are old
 ![NB: needs to be updated](img/WeAct_E-Hat_SPI.jpg)
 
 ![NB: needs to be updated](img/SD_Card-Connections.jpg)
+
+
 
 
 
